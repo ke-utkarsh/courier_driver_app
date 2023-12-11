@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_task_list_toolbar"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search"/>
+
+    <item
+        android:id="@+id/drag_drop_mode_task_list"
+        android:icon="@drawable/ic_format_line_spacing_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        android:title="@string/rearrange_tasks"/>
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/baseline_sort_24"
+        app:showAsAction="always|collapseActionView"
+        android:title="@string/toolbar_title_filter"/>
+</menu>

@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/blue_front"
+          android:width="300dp"
+          android:height="550dp"/>
+    <item android:drawable="@drawable/blue_back"
+          android:width="350dp"
+          android:height="450dp"/>
+</layer-list>

@@ -1,0 +1,52 @@
+
+# OrderTaskUpdateModel
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**assignTo** | **kotlin.String** |  |  [optional]
+**assignToVal** | **kotlin.Int** |  |  [optional]
+**createdBy** | **kotlin.String** |  |  [optional]
+**createdOn** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**deliveryDistrictId** | **kotlin.String** |  |  [optional]
+**deliveryDistrictIdVal** | **kotlin.Int** |  |  [optional]
+**deliveryFee** | **kotlin.Double** |  |  [optional]
+**deliveryLocation** | **kotlin.String** |  |  [optional]
+**deliveryLocationIdVal** | **kotlin.Int** |  |  [optional]
+**deliveryMode** | **kotlin.String** |  |  [optional]
+**deliveryRegionId** | **kotlin.String** |  |  [optional]
+**deliveryRegionIdVal** | **kotlin.Int** |  |  [optional]
+**endDate** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**expectedDelivery** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**expectedPickupSlot** | **kotlin.String** |  |  [optional]
+**expectedStart** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**failureCount** | **kotlin.Int** |  |  [optional]
+**failureReason** | **kotlin.String** |  |  [optional]
+**itemsCount** | **kotlin.Int** |  |  [optional]
+**oldAssignToVal** | **kotlin.Int** |  |  [optional]
+**oldExpectedDelivery** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**oldExpectedStart** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**oldTaskStatusIdVal** | **kotlin.Int** |  |  [optional]
+**orderId** | **kotlin.Long** |  |  [optional]
+**orderNo** | **kotlin.String** |  |  [optional]
+**pickupDate** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**pickupDistrictId** | **kotlin.String** |  |  [optional]
+**pickupDistrictIdVal** | **kotlin.Int** |  |  [optional]
+**pickupLocation** | **kotlin.String** |  |  [optional]
+**pickupLocationIdVal** | **kotlin.Int** |  |  [optional]
+**pickupRegionId** | **kotlin.String** |  |  [optional]
+**pickupRegionIdVal** | **kotlin.Int** |  |  [optional]
+**returnDeliveryFee** | **kotlin.Double** |  |  [optional]
+**rowstate** | **kotlin.String** |  |  [optional]
+**startDate** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**taskId** | **kotlin.Long** |  |  [optional]
+**taskNo** | **kotlin.String** |  |  [optional]
+**taskSequenceNo** | **kotlin.Int** |  |  [optional]
+**taskStatusId** | **kotlin.String** |  |  [optional]
+**taskStatusIdVal** | **kotlin.Int** |  |  [optional]
+**updatedBy** | **kotlin.String** |  |  [optional]
+**updatedOn** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**visibleindex** | **kotlin.Int** |  |  [optional]
+
+
+

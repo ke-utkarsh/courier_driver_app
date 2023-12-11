@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_balance_before_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/before_transaction"
+            android:textColor="@color/bgBtnStartTrip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/et_balance_before_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:padding="8dp"
+            tools:text="@string/enter_balance_hint"
+            android:textColor="@color/bgBtnStartTrip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_balance_before_transaction"
+            app:layout_constraintWidth_percent="0.34" />
+
+        <!--<EditText
+            android:id="@+id/et_balance_before_transaction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/enter_balance_hint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorHeader"
+            android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_balance_before_transaction"
+            app:layout_constraintWidth_percent="0.34" />-->
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/item_label"
+            android:textColor="@color/colorMuted"
+            app:layout_constraintStart_toStartOf="@+id/tv_balance_before_transaction"
+            app:layout_constraintTop_toBottomOf="@+id/et_balance_before_transaction" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_item"
+            app:layout_constraintStart_toEndOf="@+id/tv_item"
+            app:layout_constraintTop_toTopOf="@+id/tv_item"
+            app:layout_constraintVertical_bias="0.454"
+            app:layout_constraintWidth_percent="0.6">
+
+            <Spinner
+                android:id="@+id/item_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/description_label"
+            android:textColor="@color/colorMuted"
+            app:layout_constraintStart_toStartOf="@+id/tv_item"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/roboto"
+            android:gravity="start"
+            android:hint="@string/description_hint"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/colorHeader"
+            android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toTopOf="@+id/tv_description"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto"
+            android:lines="1"
+            android:text="@string/amount_label"
+            android:textColor="@color/colorMuted"
+            app:layout_constraintEnd_toStartOf="@+id/et_price"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_description"
+            app:layout_constraintTop_toBottomOf="@+id/et_description" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/enter_price_hint"
+            android:maxLength="8"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorHeader"
+            android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_price"
+            app:layout_constraintEnd_toEndOf="@+id/et_description"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_description"
+            app:layout_constraintTop_toTopOf="@+id/tv_price"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintWidth_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tv_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/receipt_label"
+            android:textColor="@color/colorMuted"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_receipt"
+
+            app:layout_constraintEnd_toEndOf="@+id/et_price"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="@+id/et_price"
+            app:layout_constraintTop_toTopOf="@+id/tv_receipt"
+            app:layout_constraintWidth_percent="0.6">
+
+            <Spinner
+                android:id="@+id/receipt_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="5dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/signature_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="150dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+            app:layout_constraintBottom_toTopOf="@+id/selectionbuttons">
+
+
+            <Button
+                android:id="@+id/btn_add_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/add_signature"
+                android:fontFamily="@font/roboto"
+                android:textAllCaps="false"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:background="@drawable/bg_sign_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/view_signature"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/border"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_add_sign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_return_btn"
+            android:fontFamily="@font/roboto"
+            android:text="@string/save"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/currency_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(UGX)"
+            android:fontFamily="@font/roboto"
+            android:textSize="11sp"
+            android:textColor="@color/colorMuted"
+            app:layout_constraintEnd_toEndOf="@+id/tv_price"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_price"
+            app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

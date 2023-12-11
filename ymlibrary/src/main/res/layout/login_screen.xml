@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:id="@+id/layoutLoginPage">
+
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutFooterContent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+        <include layout="@layout/logo_upper_content"/>
+            <LinearLayout
+                android:id="@+id/layoutLoginForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/layout_corner"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:focusableInTouchMode="true"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_username_icon" />
+
+                    <EditText
+                        android:id="@+id/editTextUserId"
+                        style="@style/xsmall_text_Light_width_match"
+                        android:layout_marginLeft="10dp"
+                        android:hint="@string/userid"
+                        android:maxLength="50"
+                        android:inputType="textEmailAddress" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="2dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="8dp"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPassword"
+                            style="@style/xsmall_text_Light_width_match"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textNoSuggestions|textPassword"
+                            android:maxLength="100"
+                            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonlogin"
+                    style="@style/xnormal_text_with_match"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/login"
+                    android:textStyle="normal" />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                style="@style/normal_text_width_match"
+                android:text="@string/forgot_password"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textColor="@color/colorLabelText"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/contact_us_number"
+                android:layout_above="@id/contact_us_email"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/colorLabelText"
+                style="@style/xsmall_text_width_wrap"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/contact_us_email"
+                android:layout_above="@id/layoutFooterContent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/colorLabelText"
+                style="@style/xsmall_text_width_wrap"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBarlogin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutFooterContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+        <include layout="@layout/footer_app_info" />
+
+    </RelativeLayout>
+</RelativeLayout>

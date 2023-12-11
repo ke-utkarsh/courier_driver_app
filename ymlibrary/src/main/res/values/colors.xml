@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="colorReleaseNotes">#40000000</color>
+    <color name="colorLine">#ffdfdfdf</color>
+    <color name="colorLabelText">#8a000000</color>
+    <color name="colorPrimaryTheme2">#1f7fd6</color>
+    <color name="colorButtonText">#FFFFFFFF</color>
+    <color name="colorPrimaryDarkTheme2">#33C7FF</color>
+
+
+    <color name="colorSecondary">#868e96</color>
+    <color name="colorDanger">#dc3545</color>
+    <color name="colorWarning">#ffc107</color>
+    <color name="colorInfo">#17a2b8</color>
+    <color name="colorSuccess">#28a745</color>
+    <color name="colorLight">#f8f9fa</color>
+    <color name="colorDark">#343a40</color>
+    <color name="colorMuted">#868E96</color>
+    <color name="colorForText">#656B72</color>
+
+
+
+
+
+
+</resources>

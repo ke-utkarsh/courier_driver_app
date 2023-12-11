@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/amountReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/amount"
+        android:textColor="@color/colorMuted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/amount_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/hint_zero"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorHeader"
+        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/amountReceived"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectionbuttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/continuebtn"
+            android:fontFamily="@font/roboto"
+            android:text="@string/continueBtn"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--MM Received section-->
+
+    <TextView
+        android:id="@+id/mm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/mm_text"
+        android:textColor="@color/colorMuted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amount_value" />
+
+    <Spinner
+        android:id="@+id/mm_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:entries="@array/payment_methods"
+        app:layout_constraintBottom_toBottomOf="@+id/mm_text"
+        app:layout_constraintStart_toEndOf="@+id/mm_text" />
+
+    <EditText
+        android:id="@+id/mm_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/hint_zero"
+        android:textColor="@color/colorHeader"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/amount_value"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mm_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/amount_value" />
+
+    <!--Task memo section-->
+
+    <TextView
+        android:id="@+id/task_memo_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/title_task_memo"
+        android:textColor="@color/colorMuted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mm_text" />
+
+
+    <EditText
+        android:id="@+id/task_memo_editText"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:padding="4dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/task_memo_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task_memo_label"
+        app:layout_constraintTop_toTopOf="@+id/task_memo_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/signature_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="150dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task_memo_editText"
+        app:layout_constraintBottom_toTopOf="@+id/selectionbuttons">
+
+
+        <Button
+            android:id="@+id/btn_add_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Add Signature"
+            android:fontFamily="@font/roboto"
+            android:textAllCaps="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:background="@drawable/bg_sign_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/view_signature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_add_sign"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

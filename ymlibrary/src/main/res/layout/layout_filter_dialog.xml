@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_to_filter_dialog"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:text="____/__/__"
+        app:layout_constraintBottom_toBottomOf="@+id/date_from_filter_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/date_from_filter_dialog" />
+
+    <TextView
+        android:id="@+id/text_filter_dialog_delivered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Delivered"
+        android:textColorLink="#AAAAAA"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_delivered"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_delivered"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_delivered" />
+
+    <TextView
+        android:id="@+id/text_filter_dialog_delivering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="Delivering"
+        android:textColorLink="#AAAAAA"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_delivering"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_delivering"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_delivering"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_filter_dialog_assigned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Assigned"
+        android:textColorLink="#AAAAAA"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_assigned"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_assigned"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_assigned" />
+
+    <TextView
+        android:id="@+id/text_filter_dialog_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Failed"
+        android:textColorLink="#AAAAAA"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_failed"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_failed"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_failed" />
+
+    <TextView
+        android:id="@+id/text_filter_dialog_refused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Refused"
+        android:textColorLink="#AAAAAA"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_refused"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_refused"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_refused" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        app:layout_constraintGuide_begin="44dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_filter_dialog_delivering"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_delivering_18dp"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_filter_dialog_assigned"
+        app:layout_constraintEnd_toStartOf="@+id/btn_filter_dialog_delivered"
+        app:layout_constraintStart_toEndOf="@+id/btn_filter_dialog_assigned"
+        app:layout_constraintTop_toTopOf="@+id/btn_filter_dialog_assigned" />
+
+    <Button
+        android:id="@+id/btn_filter_dialog_failed"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_failed_16dp"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_filter_dialog_delivering"
+        app:layout_constraintEnd_toStartOf="@+id/btn_filter_dialog_refused"
+        app:layout_constraintStart_toEndOf="@+id/btn_filter_dialog_delivered"
+        app:layout_constraintTop_toTopOf="@+id/btn_filter_dialog_delivering"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_filter_dialog_refused"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_refused_16dp"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_filter_dialog_failed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_filter_dialog_failed" />
+
+    <Button
+        android:id="@+id/btn_filter_dialog_delivered"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_delivered_16dp"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_filter_dialog_delivering"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_filter_dialog_delivering" />
+
+    <Button
+        android:id="@+id/btn_filter_dialog_assigned"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_assigned_16dp"
+        android:paddingTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_task_status_filter_dialog" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGrey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_filter_dialog_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="20dp"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textColor="#FF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="Filters"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_clear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_filter_dialog_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_filter_dialog_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_filter_dialog_apply"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#16c93a"
+        android:fontFamily="@font/roboto"
+        android:text="Apply"
+        android:textAllCaps="false"
+        android:textColor="#DDDDDD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_from_filter_dialog" />
+
+    <TextView
+        android:id="@+id/date_from_filter_dialog"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="____/__/__"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_from_date_filter_dialog" />
+
+    <TextView
+        android:id="@+id/text_expected_delivery_label_filter_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/expected_delivery"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_separator_filter_dialog" />
+
+    <TextView
+        android:id="@+id/label_from_date_filter_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="From Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_expected_delivery_label_filter_dialog" />
+
+    <TextView
+        android:id="@+id/label_task_status_filter_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Task Status"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/line_separator_filter_dialog"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_filter_dialog_delivering" />
+
+    <TextView
+        android:id="@+id/label_to_date_filter_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Date"
+        app:layout_constraintBottom_toBottomOf="@+id/label_from_date_filter_dialog"
+        app:layout_constraintEnd_toEndOf="@+id/date_to_filter_dialog"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/date_to_filter_dialog"
+        app:layout_constraintTop_toTopOf="@+id/label_from_date_filter_dialog" />
+</androidx.constraintlayout.widget.ConstraintLayout>

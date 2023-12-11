@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="selected_overlay">#AAD81B60</color>
+    <color name="recycler_item_selected">#EDEFF2</color>
+    <color name="colorHeader">#000000 </color>
+    <color name="colorWhite">#FFFFFF </color>
+    <color name="assigned">#0dbf58</color>
+    <color name="colorGrey">#CCC8C7</color>
+    <color name="hyperLink">#4fa5d5</color>
+    <color name="datePick"></color>
+    <color name="primary_green">#46A853</color>
+    <color name="primary_red">#ED1D0E</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="colorReleaseNotes">#40000000</color>
+    <color name="colorLine">#ffdfdfdf</color>
+    <color name="colorLabelText">#8a000000</color>
+    <color name="colorPrimaryTheme2">#1f7fd6</color>
+    <color name="colorButtonText">#FFFFFFFF</color>
+    <color name="colorPrimaryDarkTheme2">#33C7FF</color>
+
+
+    <color name="colorSecondary">#868e96</color>
+    <color name="colorDanger">#dc3545</color>
+    <color name="colorWarning">#ffc107</color>
+    <color name="colorInfo">#17a2b8</color>
+    <color name="colorSuccess">#28a745</color>
+    <color name="colorLight">#f8f9fa</color>
+    <color name="colorDark">#343a40</color>
+    <color name="colorMuted">#868E96</color>
+    <color name="colorForText">#656B72</color>
+
+    <color name="bgBtnStartTrip">#1f7fd6</color>
+
+    <!-- COLORS FOR CHAT SCREEN -->
+    <color name="bg_incoming_message">#848484</color>
+    <color name="bg_outgoing_message">#1F7FD6</color>
+    <color name="tx_history_color">#cc6699</color>
+
+</resources>

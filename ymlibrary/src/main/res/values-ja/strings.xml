@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">YMLibrary</string>
+
+
+
+    <string name="msg_no_application_available_to_view_pdf">閲覧可能なアプリケーションがありませんPDF</string>
+    <string name="msg_no_application_available_to_send_email">電子メールを送信するアプリケーションがありません</string>
+
+
+    <!--login fields-->
+    <string name="password">パスワード</string>
+    <string name="userid">ユーザーID</string>
+    <string name="login">ログイン</string>
+
+    <!--login footer-->
+    <string name="version_info">バージョン</string>
+    <string name="release_info">解放</string>
+    <string name="forgot_password">パスワードをお忘れですか？</string>
+    <string name="user_id_error">ユーザーIDを入力してください</string>
+    <string name="password_error">パスワードを入力してください。</string>
+
+    <!--synchronize screen-->
+    <string name="try_again">再試行する</string>
+    <string name="sync_text">データを同期しています。\ n待ってください...</string>
+    <string name="sync_failed">同期に失敗しました</string>
+    <string name="logout">ログアウト</string>
+
+
+
+
+
+</resources>

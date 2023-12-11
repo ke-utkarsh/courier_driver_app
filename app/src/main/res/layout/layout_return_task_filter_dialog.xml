@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:text="Apply"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_return_filter_dialog_apply" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+        android:textAllCaps="false" android:textSize="18sp" android:textColor="#DDDDDD"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" android:background="#16c93a"
+        android:fontFamily="@font/roboto" android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/return_date_from_filter_dialog"/>
+    <TextView
+        android:text="TextView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:id="@+id/return_line_separator_filter_dialog" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_return_task_delivered" android:layout_marginTop="20dp"/>
+    <TextView
+        android:text="@string/return_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+        android:id="@+id/text_return_date_label_filter_dialog"
+        android:textSize="14sp" app:layout_constraintTop_toBottomOf="@+id/return_line_separator_filter_dialog"
+        android:layout_marginTop="16dp" android:textColor="#000000"/>
+    <TextView
+        android:text="From Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+        android:id="@+id/label_return_from_date_filter_dialog" android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_return_date_label_filter_dialog"/>
+    <TextView
+        android:text="____/__/__"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/return_date_from_filter_dialog"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/label_return_from_date_filter_dialog"/>
+    <TextView
+        android:text="To Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_return_to_date_filter_dialog" app:layout_constraintEnd_toEndOf="@+id/return_date_to_filter_dialog"
+        app:layout_constraintTop_toTopOf="@+id/label_return_from_date_filter_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/label_return_from_date_filter_dialog"
+        app:layout_constraintStart_toStartOf="@+id/return_date_to_filter_dialog"
+        app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+        android:text="____/__/__"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/return_date_to_filter_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/return_date_from_filter_dialog"
+        app:layout_constraintTop_toTopOf="@+id/return_date_from_filter_dialog"
+        app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+    <TextView
+        android:text="Complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_filter_dialog_return_task_delivered"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_return_task_delivered"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_return_task_delivered"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_return_task_delivered" android:textSize="10sp"
+        android:textColorLink="#AAAAAA" android:fontFamily="@font/roboto"/>
+    <TextView
+        android:text="Delivering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_filter_dialog_return_task_delivering"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_return_task_delivering"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_return_task_delivering"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_return_task_delivering"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0" android:textSize="10sp" android:textColorLink="#AAAAAA"
+        android:fontFamily="@font/roboto"/>
+    <TextView
+        android:text="Assigned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_filter_dialog_return_task_assigned"
+        android:textSize="10sp"
+        android:textColorLink="#AAAAAA" android:fontFamily="@font/roboto"
+        app:layout_constraintStart_toStartOf="@+id/btn_filter_dialog_return_task_assigned"
+        app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_return_task_assigned" android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter_dialog_return_task_assigned"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" app:layout_constraintGuide_begin="44dp" android:id="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        android:layout_marginEnd="8dp"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_filter_dialog_return_task_delivering"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_delivering_18dp"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_filter_dialog_return_task_delivered"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_task_status_filter_dialog_return_task"
+        android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_filter_dialog_return_task_delivered"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_delivered_16dp"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_filter_dialog_return_task_assigned"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_task_status_filter_dialog_return_task"
+        app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_filter_dialog_return_task_delivering"
+        android:layout_marginStart="8dp"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_filter_dialog_return_task_assigned"
+        android:background="@drawable/shape_filter_btns"
+        android:drawableTop="@drawable/ic_filter_assigned_16dp"
+        android:paddingTop="11dp"
+        android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/label_task_status_filter_dialog_return_task"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_filter_dialog_return_task_delivering"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGrey"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_filter_dialog_return_task_clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintEnd_toEndOf="parent" android:background="@null" android:textColor="#FF0000"
+            android:textAllCaps="false" app:layout_constraintTop_toTopOf="parent" android:paddingStart="20dp"
+            android:fontFamily="@font/roboto"/>
+        <TextView
+            android:text="Filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="@+id/btn_filter_dialog_return_task_clear"
+            android:layout_marginEnd="8dp" android:textStyle="bold" android:textSize="16sp"
+            android:textColor="#000000" android:layout_marginTop="12dp" app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/roboto"/>
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/btn_filter_dialog_return_task_close" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:background="@drawable/ic_filter_dialog_close"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_task_status_filter_dialog_return_task"
+        android:text="Task Status" android:textColor="#000000" android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Contains all the resource ID/text for UI Automator testing-->
+    <string name="username_edit_text">ymsli.com.couriemate:id/input_login_userid</string>
+    <string name="password_edit_text">ymsli.com.couriemate:id/input_login_password_text</string>
+    <string name="btn_login">ymsli.com.couriemate:id/btn_login</string>
+
+    <string name="action_bar">ymsli.com.couriemate:id/action_bar_top</string>
+    <string name="search_icon">ymsli.com.couriemate:id/search_task_list_toolbar</string>
+    <string name="filter_icon">ymsli.com.couriemate:id/filter</string>
+
+    <string name="drawer_header_driver_name">ymsli.com.couriemate:id/text_driver_name_drawer_header</string>
+    <string name="drawer_header_driver_phone">ymsli.com.couriemate:id/text_driver_phone_drawer_header</string>
+    <string name="drawer_header_items">ymsli.com.couriemate:id/design_menu_item_text</string>
+    <string name="apk_version_label">ymsli.com.couriemate:id/apk_version_tv</string>
+    <string name="api_version_level">ymsli.com.couriemate:id/api_version_tv</string>
+
+    <string-array name="drawer_header_items_list">
+        <item>ymsli.com.couriemate:id/nav_home</item>
+        <item>ymsli.com.couriemate:id/nav_task_summary</item>
+        <item>ymsli.com.couriemate:id/nav_task_history</item>
+        <item>ymsli.com.couriemate:id/nav_return_task</item>
+        <item>ymsli.com.couriemate:id/nav_call_operator</item>
+        <item>ymsli.com.couriemate:id/nav_notifications</item>
+        <item>ymsli.com.couriemate:id/nav_payment</item>
+    </string-array>
+
+    <string-array name="deliveredAndReturnedRecyclerList">
+        <item>ymsli.com.couriemate:id/text_task_list_order_no</item>
+        <item>ymsli.com.couriemate:id/task_list_text_taskStatus</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_updated_on</item>
+        <item>ymsli.com.couriemate:id/task_list_text_updatedOn</item>
+        <item>ymsli.com.couriemate:id/lable_list_item_address</item>
+        <item>ymsli.com.couriemate:id/task_list_text_address</item>
+        <item>ymsli.com.couriemate:id/textView</item>
+        <item>ymsli.com.couriemate:id/tv_list_item_district</item>
+        <item>ymsli.com.couriemate:id/task_list_circle</item>
+    </string-array>
+
+    <string-array name="deliveredDetailsRecyclerItems">
+        <item>ymsli.com.couriemate:id/task_id</item>
+        <item>ymsli.com.couriemate:id/quantity</item>
+        <item>ymsli.com.couriemate:id/stausIcon</item>
+        <item>ymsli.com.couriemate:id/status</item>
+        <item>ymsli.com.couriemate:id/shippingDetail</item>
+        <item>ymsli.com.couriemate:id/receiverName</item>
+        <item>ymsli.com.couriemate:id/phoneNo</item>
+        <item>ymsli.com.couriemate:id/lable_task_detail_pickup</item>
+        <item>ymsli.com.couriemate:id/address</item>
+        <item>ymsli.com.couriemate:id/map</item>
+        <item>ymsli.com.couriemate:id/lable_task_detail_drop</item>
+        <item>ymsli.com.couriemate:id/tv_task_detail_drop</item>
+        <item>ymsli.com.couriemate:id/task_date</item>
+        <item>ymsli.com.couriemate:id/lable_task_detail_order_memo</item>
+        <item>ymsli.com.couriemate:id/input_task_detail_order_memo</item>
+        <item>ymsli.com.couriemate:id/priceDetails</item>
+        <item>ymsli.com.couriemate:id/cod_label</item>
+        <item>ymsli.com.couriemate:id/cod_value</item>
+    </string-array>
+
+    <string-array name="deliveredDetailsRecyclerItemsVisibleCheck">
+        <item>ymsli.com.couriemate:id/task_id</item>
+        <item>ymsli.com.couriemate:id/quantity</item>
+        <item>ymsli.com.couriemate:id/stausIcon</item>
+        <item>ymsli.com.couriemate:id/status</item>
+        <item>ymsli.com.couriemate:id/receiverName</item>
+        <item>ymsli.com.couriemate:id/phoneNo</item>
+        <item>ymsli.com.couriemate:id/address</item>
+        <item>ymsli.com.couriemate:id/map</item>
+        <item>ymsli.com.couriemate:id/tv_task_detail_drop</item>
+        <item>ymsli.com.couriemate:id/task_date</item>
+        <item>ymsli.com.couriemate:id/input_task_detail_order_memo</item>
+    </string-array>
+
+
+
+
+    <string-array name="returnedDetailsRecyclerItems">
+        <item>ymsli.com.couriemate:id/task_id</item>
+        <item>ymsli.com.couriemate:id/quantity</item>
+        <item>ymsli.com.couriemate:id/stausIcon</item>
+        <item>ymsli.com.couriemate:id/status</item>
+        <item>ymsli.com.couriemate:id/shippingDetail</item>
+        <item>ymsli.com.couriemate:id/receiverName</item>
+        <item>ymsli.com.couriemate:id/phoneNo</item>
+        <item>ymsli.com.couriemate:id/lable_task_detail_pickup</item>
+        <item>ymsli.com.couriemate:id/address</item>
+        <item>ymsli.com.couriemate:id/map</item>
+        <item>ymsli.com.couriemate:id/lable_task_detail_drop</item>
+        <item>ymsli.com.couriemate:id/tv_task_detail_drop</item>
+        <item>ymsli.com.couriemate:id/task_date</item>
+        <item>ymsli.com.couriemate:id/lable_task_detail_order_memo</item>
+        <item>ymsli.com.couriemate:id/input_task_detail_order_memo</item>
+        <item>ymsli.com.couriemate:id/priceDetails</item>
+        <item>ymsli.com.couriemate:id/totalAmount</item>
+        <item>ymsli.com.couriemate:id/totalAmountValue</item>
+    </string-array>
+
+    <string-array name="filterRecyclerList">
+        <item>ymsli.com.couriemate:id/btn_filter_dialog_close</item>
+        <item>ymsli.com.couriemate:id/textView7</item>
+        <item>ymsli.com.couriemate:id/text_expected_delivery_label_filter_dialog</item>
+        <item>ymsli.com.couriemate:id/label_from_date_filter_dialog</item>
+        <item>ymsli.com.couriemate:id/date_from_filter_dialog</item>
+        <item>ymsli.com.couriemate:id/label_to_date_filter_dialog</item>
+        <item>ymsli.com.couriemate:id/date_to_filter_dialog</item>
+        <item>ymsli.com.couriemate:id/btn_filter_dialog_apply</item>
+    </string-array>
+
+    <string name="action_filter_ok_btn">android:id/button1</string>
+    <string name="no_data_list">ymsli.com.couriemate:id/text_no_data_task_list</string>
+
+    <string-array name="taskListRecyclerItems">
+        <item>ymsli.com.couriemate:id/text_task_list_order_no</item>
+        <item>ymsli.com.couriemate:id/task_list_text_taskStatus</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_circle</item>
+        <item>ymsli.com.couriemate:id/task_list_text_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_address</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_updated_on</item>
+        <item>ymsli.com.couriemate:id/task_list_text_updatedOn</item>
+    </string-array>
+
+    <string-array name="taskHistoryRecyclerList">
+        <item>ymsli.com.couriemate:id/text_task_list_order_no</item>
+        <item>ymsli.com.couriemate:id/task_list_text_taskStatus</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_address</item>
+        <item>ymsli.com.couriemate:id/task_list_circle</item>
+    </string-array>
+
+    <string-array name="transactionHistoryRecyclerList">
+        <item>ymsli.com.couriemate:id/tv_transaction_item</item>
+        <item>ymsli.com.couriemate:id/tv_transaction_amount</item>
+        <item>ymsli.com.couriemate:id/tv_date</item>
+        <item>ymsli.com.couriemate:id/tv_transaction_description</item>
+        <item>ymsli.com.couriemate:id/tv_transaction_amount_value</item>
+        <item>ymsli.com.couriemate:id/tv_date_value</item>
+        <item>ymsli.com.couriemate:id/tv_transaction_description_value</item>
+    </string-array>
+
+    <string-array name="doneViewRecyclerList">
+        <item>ymsli.com.couriemate:id/text_task_list_order_no</item>
+        <item>ymsli.com.couriemate:id/task_list_text_taskStatus</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_expectedDate</item>
+        <item>ymsli.com.couriemate:id/task_list_text_label_updated_on</item>
+        <item>ymsli.com.couriemate:id/task_list_text_updatedOn</item>
+        <item>ymsli.com.couriemate:id/lable_list_item_address</item>
+        <item>ymsli.com.couriemate:id/task_list_text_address</item>
+        <item>ymsli.com.couriemate:id/textView</item>
+        <item>ymsli.com.couriemate:id/tv_list_item_district</item>
+        <item>ymsli.com.couriemate:id/task_list_circle</item>
+    </string-array>
+
+
+
+    <!--   <string name="order_number_rv">ymsli.com.couriemate:id/text_task_list_order_no</string>
+       <string name="task_status_rv">ymsli.com.couriemate:id/task_list_text_taskStatus</string>
+       <string name="expected_label_rv">ymsli.com.couriemate:id/task_list_text_label_expectedDate</string>
+       <string name="color_circle_rv">ymsli.com.couriemate:id/task_list_circle</string>
+       <string name="expected_text_rv">ymsli.com.couriemate:id/task_list_text_expectedDate</string>
+       <string name="address_rv">ymsli.com.couriemate:id/task_list_text_address</string>
+       <string name="updated_label_rv">ymsli.com.couriemate:id/task_list_text_label_updated_on</string>
+       <string name="updated_text_rv">ymsli.com.couriemate:id/task_list_text_updatedOn</string>-->
+
+    <string name="anroid_sms">com.google.android.apps.messaging:id/compose_message_text</string>
+    <string name="action_message">ymsli.com.couriemate:id/action_message</string>
+    <string name="action_call">ymsli.com.couriemate:id/action_call</string>
+    <string name="action_location">ymsli.com.couriemate:id/action_location</string>
+    <string name="action_time_picker">android:id/numberpicker_input</string>
+    <string name ="action_camera_btn">com.android.camera2:id/shutter_button</string>
+    <string name ="action_gallery_btn">com.google.android.apps.photos:id/title</string>
+
+    <string name="anroid_dialpad">com.google.android.dialer:id/dialpad</string>
+    <string name="filter_dialog_delivered">ymsli.com.couriemate:id/btn_filter_dialog_delivered</string>
+    <string name="filter_dialog_delivering">ymsli.com.couriemate:id/btn_filter_dialog_delivering</string>
+    <string name="filter_dialog_refused">ymsli.com.couriemate:id/btn_filter_dialog_refused</string>
+    <string name="filter_dialog_return">ymsli.com.couriemate:id/btn_filter_dialog_returned</string>
+    <string name="filter_dialog_apply_button">ymsli.com.couriemate:id/btn_filter_dialog_apply</string>
+    <string name="filter_clear_button">ymsli.com.couriemate:id/btn_filter_dialog_clear</string>
+    <string name="filter_spinner"> ymsli.com.couriemate:id/spinner_task_history_filter</string>
+
+    <string name="new_password">ymsli.com.couriemate:id/input_password_change_activity_new_password</string>
+    <string name="current_password">ymsli.com.couriemate:id/input_password_change_activity_current_password</string>
+    <string name="retype_new_password">ymsli.com.couriemate:id/input_password_change_activity_retype_new_password</string>
+    <string name="password_toggle">ymsli.com.couriemate:id/text_input_password_toggle</string>
+    <string name="update_btn">ymsli.com.couriemate:id/btn_password_change_activity_ok</string>
+    <string name="action_ok_btn">android:id/button1</string>
+
+
+    <string name="filter_dialog_failed">ymsli.com.couriemate:id/btn_filter_dialog_failed</string>
+    <string name="from_filter_dialog">ymsli.com.couriemate:id/date_from_filter_dialog</string>
+    <string name="to_filter_dialog">ymsli.com.couriemate:id/date_to_filter_dialog</string>
+
+    <string name="notification_header">ymsli.com.couriemate:id/tv_notification_list_item_header</string>
+    <string name="notification_detail">ymsli.com.couriemate:id/tv_notification_list_item_detail</string>
+    <string name="notification_time">ymsli.com.couriemate:id/tv_notification_list_item_time</string>
+    <string name="filter_location">ymsli.com.couriemate:id/btn_filter_dialog_couriemate_address</string>
+    <string name="location">ymsli.com.couriemate:id/text_filter_dialog_couriemate_address</string>
+    <string name="sorting_icon"> ymsli.com.couriemate:id/drag_drop_mode_task_list</string>
+
+
+
+
+    <string name="search_edit_text">ymsli.com.couriemate:id/search_src_text</string>
+    <string name= "view_signature">ymsli.com.couriemate:id/view_signature</string>
+
+
+    <string name="logout_dialog_no">android:id/button2</string>
+    <string name="logout_dialog_yes">android:id/button1</string>
+
+
+</resources>

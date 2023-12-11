@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout_password_change_activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_spinner_task_summary"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Spinner
+                android:id="@+id/spinner_task_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/taskSummaryValues"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/label_task_summary_assigned"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:drawableStart="@drawable/circle_task_summary"
+            android:drawableTint="#2079E5"
+            android:drawablePadding="8dp"
+            android:text="Assigned : "
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/container_spinner_task_summary"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/container_spinner_task_summary"
+            app:layout_constraintTop_toBottomOf="@+id/container_spinner_task_summary" />
+
+        <TextView
+            android:id="@+id/label_task_summary_delivering"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/circle_task_summary"
+            android:drawableTint="#FF9400"
+            android:drawablePadding="8dp"
+            android:textSize="16dp"
+            android:text="Delivering : "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_assigned"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_assigned"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_assigned" />
+
+        <TextView
+            android:id="@+id/label_task_summary_delivered"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/circle_task_summary"
+            android:drawableTint="#46A853"
+            android:drawablePadding="8dp"
+            android:textSize="16dp"
+            android:text="Delivered : "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_delivering"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_delivering"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_delivering" />
+
+        <TextView
+            android:id="@+id/label_task_summary_failed"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/circle_task_summary"
+            android:drawableTint="#ED1D0E"
+            android:drawablePadding="8dp"
+            android:textSize="16dp"
+            android:text="Failed : "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_delivered"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_delivered"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_delivered" />
+
+        <TextView
+            android:id="@+id/label_task_summary_refused"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/circle_task_summary"
+            android:drawableTint="#AAAAAA"
+            android:drawablePadding="8dp"
+            android:textSize="16dp"
+            android:text="Refused : "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_failed"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_failed"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_failed" />
+
+
+        <TextView
+            android:id="@+id/label_task_summary_returned"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/circle_task_summary"
+            android:drawableTint="#46A853"
+            android:drawablePadding="8dp"
+            android:textSize="16dp"
+            android:text="Returned : "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_refused"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_refused"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_refused" />
+
+        <TextView
+            android:id="@+id/label_task_summary_total"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tasks : "
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_returned"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_returned"
+            app:layout_constraintTop_toBottomOf="@+id/separator_total_bottom" />
+
+        <TextView
+            android:id="@+id/label_task_summary_total_delivery_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:text="Delivery Fee: "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_total"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_total"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_total" />
+
+        <TextView
+            android:id="@+id/label_task_summary_total_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:text="Cash Received: "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_total_delivery_fee"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_total_delivery_fee"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_total_delivery_fee" />
+
+        <TextView
+            android:id="@+id/label_task_summary_total_other_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:text="Other Payment Received: "
+            app:layout_constraintEnd_toEndOf="@+id/label_task_summary_total_cash"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/label_task_summary_total_cash"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_total_cash" />
+
+
+        <TextView
+            android:id="@+id/tv_task_summary_assigned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="16dp"
+            android:text="@string/task_summary_default_tasks"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_assigned"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_assigned"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_assigned" />
+
+        <TextView
+            android:id="@+id/tv_task_summary_delivering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="16dp"
+            android:text="@string/task_summary_default_tasks"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_delivering"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_delivering"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_delivering" />
+
+
+        <TextView
+            android:id="@+id/tv_task_summary_delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="16dp"
+            android:text="@string/task_summary_default_tasks"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_delivered"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_delivered"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_delivered" />
+
+
+        <TextView
+            android:id="@+id/tv_task_summary_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="16dp"
+            android:text="@string/task_summary_default_tasks"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_failed"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_failed"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_failed" />
+
+        <TextView
+            android:id="@+id/tv_task_summary_refused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="16dp"
+            android:text="@string/task_summary_default_tasks"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_refused"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_refused"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_refused" />
+
+        <TextView
+            android:id="@+id/tv_task_summary_returned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="16dp"
+            android:text="@string/task_summary_default_tasks"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_returned"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_returned"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_returned" />
+
+        <TextView
+            android:id="@+id/tv_task_summary_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_summary_default_tasks"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_total"
+            app:layout_constraintStart_toStartOf="@+id/tv_task_summary_total_delivery_fee"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_total" />
+
+        <TextView
+            android:id="@+id/tv_task_summary_total_delivery_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_total_delivery_fee"
+            app:layout_constraintStart_toStartOf="@+id/tv_task_summary_total_cash"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_total_delivery_fee" />
+
+
+        <TextView
+            android:id="@+id/tv_task_summary_total_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_total_cash"
+            app:layout_constraintStart_toStartOf="@+id/tv_task_summary_total_other_payment"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_total_cash" />
+
+        <TextView
+            android:id="@+id/tv_task_summary_total_other_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="0.0"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/label_task_summary_total_other_payment"
+            app:layout_constraintStart_toEndOf="@+id/label_task_summary_total_other_payment"
+            app:layout_constraintTop_toTopOf="@+id/label_task_summary_total_other_payment" />
+
+        <View
+            android:id="@+id/separator_total_top"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="#AAAAAA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_task_summary_returned" />
+
+        <View
+            android:id="@+id/separator_total_bottom"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="#AAAAAA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_total_top" />
+
+
+        <TextView
+            android:id="@+id/label_task_summary_total_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TOTAL"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/separator_total_top" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "564604529865",
+    "firebase_url": "https://couriemate-bb7c6.firebaseio.com",
+    "project_id": "couriemate-bb7c6",
+    "storage_bucket": "couriemate-bb7c6.appspoymsli.com.couriematet.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564604529865:android:98aa035f3a3ee136",
+        "android_client_info": {
+          "package_name": "in.co.ymsli.couriemate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564604529865-rfcr4r2pds3qgth01t3804utv3q3tegg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlmDgwhBMWZA_6-5CHXw9t2pfmgku9S10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564604529865-rfcr4r2pds3qgth01t3804utv3q3tegg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564604529865:android:ef73c20d31ee4fed40f118",
+        "android_client_info": {
+          "package_name": "ymsli.com.couriemate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564604529865-rfcr4r2pds3qgth01t3804utv3q3tegg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlmDgwhBMWZA_6-5CHXw9t2pfmgku9S10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564604529865-rfcr4r2pds3qgth01t3804utv3q3tegg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

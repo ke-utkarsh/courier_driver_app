@@ -1,0 +1,50 @@
+
+# TaskManagementModel
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**assignTo** | **kotlin.String** |  |  [optional]
+**assignToVal** | **kotlin.Int** |  |  [optional]
+**createdBy** | **kotlin.String** |  |  [optional]
+**createdOn** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**deliveryDistrictId** | **kotlin.Int** |  |  [optional]
+**deliveryDistrictIdVal** | **kotlin.Int** |  |  [optional]
+**deliveryLocation** | **kotlin.String** |  |  [optional]
+**deliveryMode** | **kotlin.String** |  |  [optional]
+**deliveryRegionId** | **kotlin.Int** |  |  [optional]
+**deliveryRegionIdVal** | **kotlin.Int** |  |  [optional]
+**expectedDelivery** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**expectedDeliveryOld** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**expectedPickupSlot** | **kotlin.String** |  |  [optional]
+**expectedStart** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**expectedStartOld** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**failureCount** | **kotlin.Int** |  |  [optional]
+**itemsCount** | **kotlin.Int** |  |  [optional]
+**oldAssignToVal** | **kotlin.Int** |  |  [optional]
+**oldExpectedDelivery** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**oldExpectedStart** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**oldTaskStatus** | **kotlin.String** |  |  [optional]
+**oldTaskStatusId** | **kotlin.Int** |  |  [optional]
+**orderId** | **kotlin.Long** |  |  [optional]
+**orderNo** | **kotlin.String** |  |  [optional]
+**pickupDate** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**pickupDistrictId** | **kotlin.Int** |  |  [optional]
+**pickupDistrictIdVal** | **kotlin.Int** |  |  [optional]
+**pickupLocation** | **kotlin.String** |  |  [optional]
+**pickupRegionId** | **kotlin.Int** |  |  [optional]
+**pickupRegionIdVal** | **kotlin.Int** |  |  [optional]
+**rowstate** | **kotlin.String** |  |  [optional]
+**select** | **kotlin.Boolean** |  |  [optional]
+**taskId** | **kotlin.Long** |  |  [optional]
+**taskNo** | **kotlin.String** |  |  [optional]
+**taskSequenceNo** | **kotlin.Int** |  |  [optional]
+**taskStatus** | **kotlin.String** |  |  [optional]
+**taskStatusId** | **kotlin.Int** |  |  [optional]
+**totalWeight** | **kotlin.Double** |  |  [optional]
+**updatedBy** | **kotlin.String** |  |  [optional]
+**updatedOn** | [**java.sql.Timestamp**](java.sql.Timestamp.md) |  |  [optional]
+**visibleindex** | **kotlin.Int** |  |  [optional]
+
+
+
